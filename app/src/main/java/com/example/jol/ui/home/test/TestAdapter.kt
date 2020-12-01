@@ -1,4 +1,4 @@
-package com.example.jol.ui
+package com.example.jol.ui.home.test
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
