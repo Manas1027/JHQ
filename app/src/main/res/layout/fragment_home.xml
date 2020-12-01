@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Test"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/back_btn"/>
+
+
+    <Button
+        android:id="@+id/JHQ"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="JHQ"
+        app:layout_constraintTop_toBottomOf="@id/test"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/back_btn"/>
+
+
+    <Button
+        android:id="@+id/med"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="1-med jardem"
+        app:layout_constraintTop_toBottomOf="@id/JHQ"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/back_btn"/>
+
+
+    <Button
+        android:id="@+id/shtraf"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        android:text="Shtraflar"
+        android:background="@drawable/back_btn"/>
+
+
+    <Button
+        android:id="@+id/nomer"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintTop_toBottomOf="@id/shtraf"
+        android:layout_marginTop="16dp"
+        android:text="Avto nomer"
+        android:background="@drawable/back_btn"/>
+
+
+    <Button
+        android:id="@+id/transport"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintTop_toBottomOf="@id/nomer"
+        android:layout_marginTop="16dp"
+        android:text="Transport qurali"
+        android:background="@drawable/back_btn"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
