@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.jol.R
+import com.example.jol.ui.home.item.ItemViewHolder
 
 class TestAdapter: RecyclerView.Adapter<TestViewHolder>() {
 
@@ -16,7 +17,7 @@ class TestAdapter: RecyclerView.Adapter<TestViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TestViewHolder {
-        var item = LayoutInflater.from(parent.context).inflate(R.layout.test, parent, false)
+        var item = LayoutInflater.from(parent.context).inflate(R.layout.test_item, parent, false)
         return TestViewHolder(item)
     }
 

@@ -1,15 +1,14 @@
-package com.example.jol.ui.home.test
+package com.example.jol.ui.home.item
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.jol.R
 import kotlinx.android.synthetic.main.activity_test_list.*
 
-class TestListActivity : AppCompatActivity() {
+class ItemListActivity : AppCompatActivity() {
 
-    private val myAdapter = TestAdapter()
+    private val myAdapter = ItemAdapter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,12 +20,12 @@ class TestListActivity : AppCompatActivity() {
     }
 
     fun setData(){
-        val params: MutableList<Test> = mutableListOf()
-        for(i in 1..20){
-            val model = Test("asas")
+        val params: MutableList<Item> = mutableListOf()
+        for(i in 1..3){
+            val model = Item("asas")
             model.name = "Basqish $i"
             params.add(model)
         }
-        myAdapter.models = params
+        myAdapter.items = params
     }
 }

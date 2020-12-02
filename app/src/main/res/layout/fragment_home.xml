@@ -19,7 +19,7 @@
 
 
     <Button
-        android:id="@+id/JHQ"
+        android:id="@+id/jhq"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:text="JHQ"
@@ -35,7 +35,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:text="1-med jardem"
-        app:layout_constraintTop_toBottomOf="@id/JHQ"
+        app:layout_constraintTop_toBottomOf="@id/jhq"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="16dp"
         android:layout_marginStart="32dp"

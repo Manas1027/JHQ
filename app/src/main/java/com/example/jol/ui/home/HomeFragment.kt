@@ -5,9 +5,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import com.example.jol.R
-import com.example.jol.ui.home.test.TestListActivity
 import kotlinx.android.synthetic.main.fragment_home.*
-import kotlinx.android.synthetic.main.fragment_home.view.*
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
@@ -16,8 +14,40 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         super.onViewCreated(view, savedInstanceState)
         test.setOnClickListener {
             val intent = Intent(requireActivity(), TestListActivity::class.java)
+            intent.putExtra("key", 1)
             startActivity(intent)
         }
+
+        shtraf.setOnClickListener {
+            val intent = Intent(requireActivity(), TestListActivity::class.java)
+            intent.putExtra("key", 2)
+            startActivity(intent)
+        }
+
+        jhq.setOnClickListener {
+            val intent = Intent(requireActivity(), TestListActivity::class.java)
+            intent.putExtra("key", 3)
+            startActivity(intent)
+        }
+
+        nomer.setOnClickListener {
+            val intent = Intent(requireActivity(), TestListActivity::class.java)
+            intent.putExtra("key", 4)
+            startActivity(intent)
+        }
+
+        med.setOnClickListener {
+            val intent = Intent(requireActivity(), TestListActivity::class.java)
+            intent.putExtra("key", 5)
+            startActivity(intent)
+        }
+
+        transport.setOnClickListener {
+            val intent = Intent(requireActivity(), TestListActivity::class.java)
+            intent.putExtra("key", 6)
+            startActivity(intent)
+        }
+
     }
 
 
