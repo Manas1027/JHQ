@@ -2,21 +2,18 @@ package com.example.jol.ui.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.jol.R
-import com.example.jol.data.AvtoDatabase
 import com.example.jol.data.dao.AvtoDao
-import com.example.jol.ui.home.item.Item
-import com.example.jol.ui.home.item.ItemAdapter
-import com.example.jol.ui.home.test.Test
-import com.example.jol.ui.home.test.TestAdapter
+import com.example.jol.ui.home.item_test.Item
+import com.example.jol.ui.home.item_shtraf.ShtrafAdapter
+import com.example.jol.ui.home.item_test.TestAdapter
 import kotlinx.android.synthetic.main.activity_test_list.*
 
 class TestListActivity : AppCompatActivity() {
 
     private val testAdapter = TestAdapter()
-    private val itemAdapter = ItemAdapter()
+    private val itemAdapter = ShtrafAdapter()
     private lateinit var dao: AvtoDao
     var keyNumber: Int = 0
 
@@ -56,9 +53,9 @@ class TestListActivity : AppCompatActivity() {
 
 
       fun setDataTest() {
-            val params: MutableList<Test> = mutableListOf()
+            val params: MutableList<Item> = mutableListOf()
             for (i in 1..20) {
-                val model = Test("asas")
+                val model = Item("asas")
                 model.name = "Basqish $i"
                 params.add(model)
             }

@@ -1,14 +1,16 @@
-package com.example.jol.ui.home.item
+package com.example.jol.ui.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.jol.R
+import com.example.jol.ui.home.item_test.Item
+import com.example.jol.ui.home.item_shtraf.ShtrafAdapter
 import kotlinx.android.synthetic.main.activity_test_list.*
 
 class ItemListActivity : AppCompatActivity() {
 
-    private val myAdapter = ItemAdapter()
+    private val myAdapter = ShtrafAdapter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

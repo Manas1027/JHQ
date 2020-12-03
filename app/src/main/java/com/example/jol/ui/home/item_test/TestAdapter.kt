@@ -1,14 +1,13 @@
-package com.example.jol.ui.home.test
+package com.example.jol.ui.home.item_test
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.jol.R
-import com.example.jol.ui.home.item.ItemViewHolder
 
 class TestAdapter: RecyclerView.Adapter<TestViewHolder>() {
 
-    var models: MutableList<Test> = mutableListOf()
+    var models: MutableList<Item> = mutableListOf()
     set(value) {
         field = value
         notifyDataSetChanged()
