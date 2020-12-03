@@ -6,12 +6,13 @@
     android:background="@drawable/back_item">
 
     <ImageView
-        android:id="@+id/testImage"
+        android:id="@+id/userImage"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
         android:layout_marginStart="8dp"
         android:src="@drawable/user"/>
 
@@ -22,7 +23,7 @@
         android:layout_marginStart="16dp"
         android:textSize="20sp"
         android:text="Basqish"
-        app:layout_constraintStart_toEndOf="@id/testImage"
+        app:layout_constraintStart_toEndOf="@id/userImage"
         app:layout_constraintTop_toTopOf="parent"
         android:textColor="#ffffff"
         android:layout_marginTop="16dp"
