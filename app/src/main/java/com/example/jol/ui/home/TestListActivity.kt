@@ -2,8 +2,11 @@ package com.example.jol.ui.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.jol.R
+import com.example.jol.data.AvtoDatabase
+import com.example.jol.data.dao.AvtoDao
 import com.example.jol.ui.home.item.Item
 import com.example.jol.ui.home.item.ItemAdapter
 import com.example.jol.ui.home.test.Test
@@ -14,12 +17,14 @@ class TestListActivity : AppCompatActivity() {
 
     private val testAdapter = TestAdapter()
     private val itemAdapter = ItemAdapter()
+    private lateinit var dao: AvtoDao
     var keyNumber: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_test_list)
         RV.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        //dao = AvtoDatabase.getInstance(requireContext()).dao()
         keyNumber = intent.getIntExtra("key", 0)
         when(keyNumber){
             1 -> {
@@ -61,13 +66,8 @@ class TestListActivity : AppCompatActivity() {
         }
 
     fun setDataShtraf() {
-        val params: MutableList<Item> = mutableListOf()
-        for (i in 1..3) {
-            val model = Item("asas")
-            model.name = "Basqish $i"
-            params.add(model)
-        }
-        itemAdapter.items = params
+
+        //itemAdapter.items = dao.getAvto()
     }
 
     fun setDataJHQ() {

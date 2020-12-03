@@ -16,9 +16,9 @@ abstract class AvtoDatabase: RoomDatabase() {
             Room.databaseBuilder(
                 context,
                 AvtoDatabase::class.java,
-                "avto.db"
+                "jhq.db"
             )
-                .createFromAsset("avto.db")
+                .createFromAsset("jhq.db")
                 .build()
     }
 

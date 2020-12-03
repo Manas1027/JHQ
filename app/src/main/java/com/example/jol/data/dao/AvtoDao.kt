@@ -6,6 +6,6 @@ import com.example.jol.data.model.Avto
 
 @Dao
 interface AvtoDao {
-    @Query("SELECT * FROM legkovoy")
+    @Query("SELECT * FROM shtraflar")
     fun getAvto(): List<Avto>
 }

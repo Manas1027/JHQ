@@ -5,17 +5,12 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 
-@Entity(tableName = "legkovoy")
+@Entity(tableName = "shtraflar")
 data class Avto (
     @PrimaryKey
     val id: Int,
 
-    @ColumnInfo(name="name")
-    val name: String,
+    @ColumnInfo(name="text")
+    val text: String,
 
-    @ColumnInfo(name="cena")
-    val cena: Int,
-
-    @ColumnInfo(name="at_kushi")
-    val atKushi: Int
     )
