@@ -16,7 +16,7 @@ class MedAdapter: RecyclerView.Adapter<MedViewHolder>() {
         }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MedViewHolder {
-        var item = LayoutInflater.from(parent.context).inflate(R.layout.item_test, parent, false)
+        var item = LayoutInflater.from(parent.context).inflate(R.layout.shtraf_item, parent, false)
         return MedViewHolder(item)
     }
 

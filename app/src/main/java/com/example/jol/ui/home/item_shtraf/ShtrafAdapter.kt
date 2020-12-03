@@ -8,7 +8,7 @@ import com.example.jol.ui.home.item_test.Item
 
 class ShtrafAdapter: RecyclerView.Adapter<ShtrafViewHolder>() {
 
-    var items: MutableList<Item> = mutableListOf()
+    var models: MutableList<Item> = mutableListOf()
     set(value) {
         field = value
         notifyDataSetChanged()
@@ -23,10 +23,10 @@ class ShtrafAdapter: RecyclerView.Adapter<ShtrafViewHolder>() {
 
 
     override fun getItemCount(): Int {
-        return items.size
+        return models.size
     }
 
     override fun onBindViewHolder(holder: ShtrafViewHolder, position: Int) {
-        holder.populateModel(items[position])
+        holder.populateModel(models[position])
     }
 }

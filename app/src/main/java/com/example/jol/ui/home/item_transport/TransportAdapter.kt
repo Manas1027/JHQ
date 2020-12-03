@@ -16,7 +16,7 @@ class TransportAdapter: RecyclerView.Adapter<TransportViewHolder>() {
         }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TransportViewHolder {
-        var item = LayoutInflater.from(parent.context).inflate(R.layout.item_test, parent, false)
+        var item = LayoutInflater.from(parent.context).inflate(R.layout.shtraf_item, parent, false)
         return TransportViewHolder(item)
     }
 

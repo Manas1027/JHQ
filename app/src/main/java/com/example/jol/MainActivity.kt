@@ -12,7 +12,7 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import com.example.jol.ui.home.TestListActivity
+import com.example.jol.ui.home.HomeActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
     fun activ(){
-        val intent = Intent (this, TestListActivity::class.java)
+        val intent = Intent (this, HomeActivity::class.java)
         startActivity(intent)
     }
 }
