@@ -17,7 +17,7 @@ class TestAdapter: RecyclerView.Adapter<TestViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TestViewHolder {
-        var item = LayoutInflater.from(parent.context).inflate(R.layout.test_item, parent, false)
+        var item = LayoutInflater.from(parent.context).inflate(R.layout.item_test, parent, false)
         return TestViewHolder(item)
     }
 
