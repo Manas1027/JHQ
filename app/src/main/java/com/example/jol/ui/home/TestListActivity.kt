@@ -67,7 +67,7 @@ class TestListActivity : AppCompatActivity() {
 
     fun setDataShtraf() {
 
-        //itemAdapter.items = dao.getAvto()
+        //itemAdapter.items = dao.getShtraf()
     }
 
     fun setDataJHQ() {

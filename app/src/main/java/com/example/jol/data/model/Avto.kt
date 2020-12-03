@@ -12,5 +12,4 @@ data class Avto (
 
     @ColumnInfo(name="text")
     val text: String,
-
     )
